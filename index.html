@@ -1,12 +1,143 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-  <meta charset="utf-8">
-  <title>山田太郎のポートフォリオサイト</title>
-  <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yuma Fujimoto | Portfolio</title>
+  <style>
+    body {
+      font-family: "Segoe UI", sans-serif;
+      margin: 0;
+      background: #f7f7f7;
+      color: #333;
+      line-height: 1.7;
+    }
+    header {
+      background: #1f2937;
+      color: #fff;
+      padding: 40px 20px;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.2rem;
+    }
+    header p {
+      margin-top: 10px;
+      color: #cbd5e1;
+    }
+    section {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+    h2 {
+      border-left: 5px solid #2563eb;
+      padding-left: 10px;
+      margin-bottom: 20px;
+    }
+    ul {
+      padding-left: 20px;
+    }
+    .skills li {
+      margin-bottom: 6px;
+    }
+    .project {
+      background: #fff;
+      padding: 20px;
+      margin-bottom: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+    }
+    .project a {
+      color: #2563eb;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    footer {
+      text-align: center;
+      padding: 30px;
+      color: #666;
+      font-size: 0.9rem;
+    }
+  </style>
 </head>
 <body>
-  <h1>山田太郎</h1>
-  <p>UI/UXデザイナー見習いです。ドットインストールで勉強中です!</p>
+
+<header>
+  <h1>Yuma Fujimoto</h1>
+  <p>Android / Embedded Software Engineer</p>
+</header>
+
+<section>
+  <h2>About Me</h2>
+  <p>
+    組み込みアプリ開発系の部署に所属し、車載カーナビ向けAndroidシステムの開発に従事しています。
+    主に Java / C++ を用いた開発を行い、HALを通じた低レベルAPIの利用やテスト実装も担当してきました。
+  </p>
+</section>
+
+<section>
+  <h2>Skills</h2>
+  <ul class="skills">
+    <li><strong>Languages:</strong> Java, C++, (Learning: Kotlin, Python, Rust)</li>
+    <li><strong>Platform:</strong> Android (AOSP), Linux</li>
+    <li><strong>Embedded:</strong> HAL, CAN通信, JNI</li>
+    <li><strong>Tools:</strong> Git, JUnit, GoogleTest</li>
+    <li><strong>Other:</strong> 要件整理 / 設計 / テスト観点整理</li>
+  </ul>
+</section>
+
+<section>
+  <h2>Experience</h2>
+  <div class="project">
+    <h3>車載Androidシステム開発</h3>
+    <p>
+      カーナビ向けAndroid OS上で動作するアプリケーション・ミドル層の開発に従事。
+      HAL経由でのハードウェア制御や、既存仕様を読み解きながらの機能追加・不具合修正を経験。
+    </p>
+  </div>
+</section>
+
+<section>
+  <h2>Projects</h2>
+
+  <div class="project">
+    <h3>Raspberry Pi / Pico を用いた電子工作プロジェクト</h3>
+    <p>
+      監視カメラ構築、ラジコンカー制御、センサー制御などを個人で検討・試作。
+      ハードとソフトの境界を意識した設計を重視。
+    </p>
+    <a href="https://github.com/ユーザー名">GitHubを見る</a>
+  </div>
+
+  <div class="project">
+    <h3>学習・思考整理用アウトプット</h3>
+    <p>
+      OS、セキュリティ、抽象的概念を
+      自分の言葉で理解・整理することを目的としたアウトプット。
+    </p>
+  </div>
+
+</section>
+
+<section>
+  <h2>Certifications</h2>
+  <ul>
+    <li>応用情報技術者試験 合格</li>
+  </ul>
+</section>
+
+<section>
+  <h2>Contact</h2>
+  <ul>
+    <li>GitHub: <a href="https://github.com/UMA-0007">https://github.com/UMA-0007</a></li>
+    <li>Email: your-email@example.com</li>
+  </ul>
+</section>
+
+<footer>
+  © 2026 Yuma Fujimoto
+</footer>
+
 </body>
 </html>
